@@ -1,0 +1,36 @@
+/* =========== IMPORT ================ */
+/*========= COLORS =======*/
+/* A12750; */
+/*========= FONT FAMILY =======*/
+@import "https://fonts.googleapis.com/css?family=Josefin+Slab:300,400|Raleway:300,400,700|Roboto";
+/*========= FONT SIZE =======*/
+/* ========== General ================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", Arial;
+  border-top: 30px solid #a4b4ca; }
+
+.wrapper {
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px #B6B6B6; }
+
+.container-form {
+  width: 100%;
+  color: #FFFFFF;
+  padding: 50px; }
+  .container-form .form {
+    width: 100%;
+    margin: auto; }
+    .container-form .form input-group {
+      position: relative; }
+
+/*# sourceMappingURL=style.css.map */
