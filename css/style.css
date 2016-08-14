@@ -3,7 +3,7 @@
 /* A12750; */
 /*========= FONT FAMILY =======*/
 @import "https://fonts.googleapis.com/css?family=Josefin+Slab:300,400|Raleway:300,400,700|Roboto";
-/*========= FONT SIZE =======*/
+/*=========  SIZE =======*/
 /* ========== General ================ */
 * {
   margin: 0;
@@ -13,11 +13,11 @@
 body {
   background-color: #f2f2f2;
   font-family: "Roboto", Arial;
-  border-top: 30px solid #a4b4ca; }
+  border-top: 30px solid #273b47; }
 
 .wrapper {
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   padding: 40px;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -30,7 +30,111 @@ body {
   .container-form .form {
     width: 100%;
     margin: auto; }
-    .container-form .form input-group {
-      position: relative; }
+    .container-form .form .input-group {
+      position: relative;
+      margin-bottom: 32px; }
+      .container-form .form .input-group input[type="email"],
+      .container-form .form .input-group input[type="password"],
+      .container-form .form .input-group input[type="text"] {
+        font-family: "Roboto", Arial;
+        font-size: 16px;
+        color: #257F78;
+        width: 100%;
+        outline: none;
+        padding: 15px;
+        background-color: none;
+        border: none;
+        border-bottom: 2px solid #273b47; }
+        .container-form .form .input-group input[type="email"]:active, .container-form .form .input-group input[type="email"]:focus,
+        .container-form .form .input-group input[type="password"]:active,
+        .container-form .form .input-group input[type="password"]:focus,
+        .container-form .form .input-group input[type="text"]:active,
+        .container-form .form .input-group input[type="text"]:focus {
+          outline: none;
+          border-bottom: 2px solid #e65380; }
+        .container-form .form .input-group input[type="email"]:error,
+        .container-form .form .input-group input[type="password"]:error,
+        .container-form .form .input-group input[type="text"]:error {
+          border-bottom: 2px solid #D32F2F; }
+          .container-form .form .input-group input[type="email"]:error label,
+          .container-form .form .input-group input[type="password"]:error label,
+          .container-form .form .input-group input[type="text"]:error label {
+            color: #D32F2F; }
+      .container-form .form .input-group label {
+        color: #273b47; }
+      .container-form .form .input-group .label {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: 16px;
+        transition: all 0.3s ease; }
+        .container-form .form .input-group .label:active {
+          top: -12px;
+          font-size: 12px;
+          line-height: 12px;
+          color: #257F78; }
+    .container-form .form .radio input[type="radio"] {
+      display: none; }
+      .container-form .form .radio input[type="radio"]:checked + label:before {
+        display: none; }
+      .container-form .form .radio input[type="radio"]:checked + label {
+        padding: 5px 15px;
+        background-color: #273b47;
+        border-radius: 2px;
+        color: #FFFFFF; }
+    .container-form .form .checkbox label:before {
+      border-radius: 3px !important; }
+    .container-form .form .checkbox input[type="checkbox"] {
+      display: none; }
+      .container-form .form .checkbox input[type="checkbox"]:checked + label:before {
+        display: none; }
+      .container-form .form .checkbox input[type="checkbox"]:checked + label {
+        padding: 5px 15px;
+        background-color: #273b47;
+        border-radius: 2px;
+        color: #FFFFFF; }
+    .container-form .form .checkbox label,
+    .container-form .form .radio label {
+      display: inline-block;
+      cursor: pointer;
+      color: #273b47;
+      position: relative;
+      padding: 5px 15px 5px 51px;
+      font-size: 1em;
+      border-radius: 3px;
+      transition: all 0.3s ease; }
+      .container-form .form .checkbox label:hover,
+      .container-form .form .radio label:hover {
+        background-color: rgba(39, 59, 71, 0.5); }
+      .container-form .form .checkbox label:before,
+      .container-form .form .radio label:before {
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        left: 15px;
+        border-radius: 50%;
+        background: none;
+        border: 2px solid #273b47; }
+      .container-form .form .checkbox label:error,
+      .container-form .form .radio label:error {
+        color: #D32F2F; }
+    .container-form .form .error label {
+      color: red; }
+    .container-form .form input[type="submit"] {
+      background-color: #273b47;
+      border-radius: 1px;
+      border: 2px solid #FFFFFF;
+      color: #FFFFFF;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      font-family: "Raleway", "Helvetica Neue", Arial, Verdana, sans-serif;
+      transition: all 0.3s ease; }
+      .container-form .form input[type="submit"]:hover {
+        background-color: #e65380; }
 
 /*# sourceMappingURL=style.css.map */
