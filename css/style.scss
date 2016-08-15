@@ -48,12 +48,12 @@ body {
                     outline: none;
                     border-bottom: $border solid $pink;
                 }
-                &:error {
-                    border-bottom: $border solid $red;
-                    label {
-                        color: $red;
-                    }
-                }
+                // &:error {
+                //     border-bottom: $border solid $red;
+                //     label {
+                //         color: $red;
+                //     }
+                // }
             }
             label {
                 color: $secundary;
@@ -66,12 +66,12 @@ body {
                 line-height: 16px;
                 margin-left: 16px;
                 transition: all 0.3s ease;
-                &:active {
-                    top: -12px;
-                    font-size: 12px;
-                    line-height: 12px;
-                    color: $primary;
-                }
+            }
+            .active {
+                top: -12px;
+                font-size: 12px;
+                line-height: 12px;
+                color: $primary;
             }
         }
         .radio {

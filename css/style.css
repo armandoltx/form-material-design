@@ -52,14 +52,6 @@ body {
         .container-form .form .input-group input[type="text"]:focus {
           outline: none;
           border-bottom: 2px solid #e65380; }
-        .container-form .form .input-group input[type="email"]:error,
-        .container-form .form .input-group input[type="password"]:error,
-        .container-form .form .input-group input[type="text"]:error {
-          border-bottom: 2px solid #D32F2F; }
-          .container-form .form .input-group input[type="email"]:error label,
-          .container-form .form .input-group input[type="password"]:error label,
-          .container-form .form .input-group input[type="text"]:error label {
-            color: #D32F2F; }
       .container-form .form .input-group label {
         color: #273b47; }
       .container-form .form .input-group .label {
@@ -70,11 +62,11 @@ body {
         line-height: 16px;
         margin-left: 16px;
         transition: all 0.3s ease; }
-        .container-form .form .input-group .label:active {
-          top: -12px;
-          font-size: 12px;
-          line-height: 12px;
-          color: #257F78; }
+      .container-form .form .input-group .active {
+        top: -12px;
+        font-size: 12px;
+        line-height: 12px;
+        color: #257F78; }
     .container-form .form .radio input[type="radio"] {
       display: none; }
       .container-form .form .radio input[type="radio"]:checked + label:before {
