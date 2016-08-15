@@ -5,7 +5,8 @@
   <title>Form Material Design</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/form.js" charset="utf-8"></script>
 </head>
 <body>
   <div class="container-form">
@@ -13,19 +14,19 @@
     <form action="" class="form" name="register-form" method="post">
 
       <div class="input-group">
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
         <label class="label" for="name">Name:</label>
       </div>
       <div class="input-group">
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
         <label class="label" for="email">Email:</label>
       </div>
       <div class="input-group">
-        <input type="password" id="pass" name="pass">
+        <input type="password" id="pass" name="pass" required>
         <label class="label" for="pass">Password:</label>
       </div>
       <div class="input-group">
-        <input type="password" id="pass2" name="pass2">
+        <input type="password" id="pass2" name="pass2"required>
         <label class="label" for="pass2"> Repeat Password:</label>
       </div>
       <div class="input-group radio">
@@ -35,7 +36,7 @@
         <label for="woman">Woman</label>
       </div>
       <div class="input-group checkbox">
-        <input type="checkbox" id="terms" name="terms" value="true">
+        <input type="checkbox" id="terms" name="terms" value="true" required>
         <label for="terms">Accept terms</label>
       </div>
 
